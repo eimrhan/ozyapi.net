@@ -543,13 +543,13 @@ var contactForm = function() {
 				},
 				message: {
 					required: true,
-					minlength: 5
+					minlength: 10
 				}
 			},
 			messages: {
-				name: "Lütfen Adını Gir",
-				email: "Lütfen Geçerli Bir Mail Adresi Gir",
-				message: "Mesajın en az 5 karakter olmalı."
+				name: "Lütfen Adınızı Girin.",
+				email: "Lütfen Geçerli Bir E-Mail Adresi Girin.",
+				message: "Mesajınız en az 10 karakter olmalı."
 			},
 			errorElement: 'span',
 			errorLabelContainer: '.form-error',
@@ -583,7 +583,7 @@ var contactForm = function() {
 		            }
 			      },
 			      error: function() {
-			      	$('#form-message-warning').html("Bir şeyler ters gitti. Lütfen daha sonra tekrar dene.");
+			      	$('#form-message-warning').html("Bir şeyler ters gitti. Lütfen daha sonra tekrar deneyin.");
 			         $('#form-message-warning').fadeIn();
 			         $submit.css('display', 'none');
 			      }
